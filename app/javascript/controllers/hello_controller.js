@@ -11,13 +11,17 @@ export default class extends Controller {
 const options = document.querySelectorAll("#table td");
 
 
-
 options.forEach((box) => {
   box.addEventListener("click", (event) => {
     console.log(event);
     box.innerHTML = "0";
-    box.classList.add("clicked");
-    box.disabled = true
-    box.nextElementSibling.innerHTML = "X"
+    box.classList.add("user_clicked");
+    box.disabled = true;
+
+    // box.parentElement.rowIndex
+
+    box.nextElementSibling.innerHTML = "X";
+    box.nextElementSibling.classList.add("comp_clicked");
+    box.nextElementSibling.disabled = true;
   })
 });

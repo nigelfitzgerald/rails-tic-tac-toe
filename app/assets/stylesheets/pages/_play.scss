@@ -22,10 +22,6 @@
 }
 
 
-.test:active {
-  background-color: black;
-}
-
 .container {
   width: 480px;
   margin: 0 auto;
@@ -35,14 +31,37 @@
   background-color: black;
 }
 
-.play_again {
-  margin-top: 50px;
+// .play_again {
+//   margin-top: 50px;
+//   text-align: center;
+//   position: relative;
+//   left: 180px;
+// }
+
+.button {
   text-align: center;
+  margin-top: 50px;
 }
 
 
 
-.clicked {
+.user_clicked {
   background-color: rgb(222, 222, 222);
   text-align: center;
+}
+
+.comp_clicked {
+  background-color: rgb(111, 222, 233);
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  margin: 25px 0px 25px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 25 px;
+  padding-top: 25px;
 }
