@@ -1,0 +1,48 @@
+.tr {
+  border: 10px solid rgb(49, 49, 49);
+  border-radius: 8px;
+}
+
+#table td {
+  height: 40px;
+  width: 40px;
+  border: 10px solid rgb(49, 49, 49);
+}
+
+.board {
+  width: 480px;
+  height: 480px;
+}
+
+
+#table {
+  width: 480px;
+  height: 480px;
+  // border-radius: 8px;
+}
+
+
+.test:active {
+  background-color: black;
+}
+
+.container {
+  width: 480px;
+  margin: 0 auto;
+}
+
+.input:checked {
+  background-color: black;
+}
+
+.play_again {
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+
+.clicked {
+  background-color: rgb(222, 222, 222);
+  text-align: center;
+}
