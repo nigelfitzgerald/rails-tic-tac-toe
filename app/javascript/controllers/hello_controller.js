@@ -38,3 +38,12 @@ options.forEach((box) => {
 
 // const random = Math.floor(Math.random() * months.length);
 // console.log(random, months[random]);
+
+
+// if (document.getElementById("1").innerHTML === document.getElementById("2").innerHTML === document.getElementById("3").innerHTML) {
+//   if (document.getElementById("1").innerHTML === "X") {
+//     console.log("Computer wins")
+//   } else {
+//     console.log("You win")
+//   }
+// }

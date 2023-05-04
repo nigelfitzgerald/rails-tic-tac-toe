@@ -8,14 +8,6 @@ class GameController < ApplicationController
   end
 
   def create
-    if condition
-      if @user#(wins)
-        @game = Game.new(wins: 1)
-      else
-        @game = Game.new(wins: 0)
-      end
-      if @game.save
-      end
-    end
+    @game = Game.new(user: current_user, win: userwins? ? 1 : 0)
   end
 end
