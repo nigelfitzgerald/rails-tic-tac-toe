@@ -14,14 +14,20 @@ const options = document.querySelectorAll("#table td");
 options.forEach((box) => {
   box.addEventListener("click", (event) => {
     console.log(event);
-    box.innerHTML = "0";
-    box.classList.add("user_clicked");
-    box.disabled = true;
+    if (box.disabled != true ) {
+      box.innerHTML = "0";
+      box.classList.add("user_clicked");
+      box.disabled = true;
 
-    // box.parentElement.rowIndex
 
-    // box.nextElementSibling.innerHTML = "X";
-    // box.nextElementSibling.classList.add("comp_clicked");
+      // box.parentElement.rowIndex
+      if (box.nextElementSibling.disabled != true ) {
+        box.nextElementSibling.innerHTML = "X";
+        box.nextElementSibling.classList.add("comp_clicked");
+        box.nextElementSibling.disabled = true;
+      }
+    }
+
     // box.nextElementSibling.disabled = true;
   })
 });
