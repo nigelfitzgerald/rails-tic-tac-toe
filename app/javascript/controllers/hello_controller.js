@@ -11,23 +11,30 @@ export default class extends Controller {
 const options = document.querySelectorAll("#table td");
 
 
+
 options.forEach((box) => {
   box.addEventListener("click", (event) => {
     console.log(event);
-    if (box.disabled != true ) {
+    if (box.classList.contains("empty")) {
       box.innerHTML = "0";
       box.classList.add("user_clicked");
-      box.disabled = true;
-
-
-      // box.parentElement.rowIndex
-      if (box.nextElementSibling.disabled != true ) {
-        box.nextElementSibling.innerHTML = "X";
-        box.nextElementSibling.classList.add("comp_clicked");
-        box.nextElementSibling.disabled = true;
-      }
+      box.classList.remove("empty");
     }
 
-    // box.nextElementSibling.disabled = true;
-  })
+    const optionsLeft = document.querySelectorAll(".empty")
+    console.log(optionsLeft)
+    const random = Math.floor(Math.random() * optionsLeft.length);
+    console.log(random, optionsLeft[random]);
+    const compOption = optionsLeft[random]
+    compOption.innerHTML = "X";
+    compOption.classList.add("comp_clicked");
+    compOption.classList.remove("empty");
+  });
 });
+
+
+
+// const months = ["January", "February", "March", "April", "May", "June", "July"];
+
+// const random = Math.floor(Math.random() * months.length);
+// console.log(random, months[random]);
