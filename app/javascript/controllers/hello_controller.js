@@ -20,8 +20,8 @@ options.forEach((box) => {
 
     // box.parentElement.rowIndex
 
-    box.nextElementSibling.innerHTML = "X";
-    box.nextElementSibling.classList.add("comp_clicked");
-    box.nextElementSibling.disabled = true;
+    // box.nextElementSibling.innerHTML = "X";
+    // box.nextElementSibling.classList.add("comp_clicked");
+    // box.nextElementSibling.disabled = true;
   })
 });
