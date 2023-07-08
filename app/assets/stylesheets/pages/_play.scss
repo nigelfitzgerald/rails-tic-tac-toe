@@ -12,15 +12,13 @@
 .board {
   width: 480px;
   height: 480px;
+  // margin-top: 65px;
 }
-
 
 #table {
   width: 480px;
   height: 480px;
-  // border-radius: 8px;
 }
-
 
 .container {
   width: 480px;
@@ -31,19 +29,10 @@
   background-color: black;
 }
 
-// .play_again {
-//   margin-top: 50px;
-//   text-align: center;
-//   position: relative;
-//   left: 180px;
-// }
-
 .button {
   text-align: center;
   margin-top: 50px;
 }
-
-
 
 .user_clicked {
   background-color: rgb(222, 222, 222);
