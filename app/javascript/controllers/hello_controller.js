@@ -14,15 +14,13 @@ const options = document.querySelectorAll("#table td");
 
 options.forEach((box) => {
   box.addEventListener("click", (event) => {
-    console.log(event);
-    console.log(box.className);
+    // console.log(event);
+    // console.log(box.className);
     if (box.className === "empty" && !checkIfWin("comp_clicked") && !checkIfWin("user_clicked")) {
-      if (box.classList.contains("empty")) {
-        box.innerHTML = "0";
-        box.classList.add("user_clicked");
-        box.classList.remove("empty");
-      }
-      console.log(options);
+      box.innerHTML = "0";
+      box.classList.add("user_clicked");
+      box.classList.remove("empty");
+
       let playerWins = checkIfWin("user_clicked")
       if (playerWins) {
         const winner = document.querySelector('.winner');
@@ -32,9 +30,9 @@ options.forEach((box) => {
         winner.innerHTML = 'Draw';
       } else {
         const optionsLeft = document.querySelectorAll(".empty")
-        console.log(optionsLeft)
+        // console.log(optionsLeft)
         const random = Math.floor(Math.random() * optionsLeft.length);
-        console.log(random, optionsLeft[random]);
+        // console.log(random, optionsLeft[random]);
         const compOption = optionsLeft[random]
         compOption.innerHTML = "X";
         compOption.classList.add("comp_clicked");
